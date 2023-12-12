@@ -1,0 +1,102 @@
+
+<!DOCTYPE html> 
+ <head> 
+	<meta name='description' content='Hacked XSS Projet'/> 	<meta name='keywords' content='Hacked XSS Projet'/> 
+	<meta name='author' content='Hacked XSS Projet'/> 
+		<title>HACKED BY RAYEN  & SALIM </title> 
+</head>
+<body bgcolor=black>
+<style type=text/css> html, body, h1 { padding: 0; margin: 0; font-family: 'Montserrat', sans-serif; } #app { background: #0a0a0a; height: 100vh; width: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(https://i.ibb.co/Z2PtMzG/Screenshot-20200709-205352-picsay.png); background-size: cover; background-position: center; z-index: 1; } #wrapper { text-align: center; } .sub { color: #64dcdc; letter-spacing: 1em; } /* Our mixin positions a copy of our text directly on our existing text, while also setting content to the appropriate text set in the data-text attribute. */ .glitch { position: relative; color: white; font-size: 3em; letter-spacing: .5em; /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */ animation: glitch-skew 1s infinite linear alternate-reverse; } .glitch::before { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 2px; text-shadow: -2px 0 #ff00c1; /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */ clip: rect(44px, 450px, 56px, 0); /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */ animation: glitch-anim 5s infinite linear alternate-reverse; } .glitch::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: -2px; text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1; animation: glitch-anim2 1s infinite linear alternate-reverse; } /* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/ @keyframes glitch-anim { 0% { clip: rect(87px, 9999px, 77px, 0); transform: skew(0.08deg); } 5% { clip: rect(100px, 9999px, 16px, 0); transform: skew(0.42deg); } 10% { clip: rect(48px, 9999px, 57px, 0); transform: skew(0.41deg); } 15% { clip: rect(77px, 9999px, 94px, 0); transform: skew(0.3deg); } 20% { clip: rect(62px, 9999px, 43px, 0); transform: skew(0.41deg); } 25% { clip: rect(55px, 9999px, 73px, 0); transform: skew(0.19deg); } 30% { clip: rect(30px, 9999px, 95px, 0); transform: skew(0.42deg); } 35% { clip: rect(64px, 9999px, 49px, 0); transform: skew(0.67deg); } 40% { clip: rect(16px, 9999px, 3px, 0); transform: skew(0.91deg); } 45% { clip: rect(77px, 9999px, 96px, 0); transform: skew(0.33deg); } 50% { clip: rect(84px, 9999px, 42px, 0); transform: skew(0.6deg); } 55% { clip: rect(35px, 9999px, 63px, 0); transform: skew(0.07deg); } 60% { clip: rect(34px, 9999px, 27px, 0); transform: skew(0.1deg); } 65% { clip: rect(74px, 9999px, 56px, 0); transform: skew(0.37deg); } 70% { clip: rect(11px, 9999px, 28px, 0); transform: skew(0.16deg); } 75% { clip: rect(49px, 9999px, 63px, 0); transform: skew(0.02deg); } 80% { clip: rect(92px, 9999px, 32px, 0); transform: skew(0.83deg); } 85% { clip: rect(31px, 9999px, 55px, 0); transform: skew(0.77deg); } 90% { clip: rect(85px, 9999px, 13px, 0); transform: skew(0.23deg); } 95% { clip: rect(1px, 9999px, 85px, 0); transform: skew(0.72deg); } 100% { clip: rect(25px, 9999px, 66px, 0); transform: skew(0.71deg); } } @keyframes glitch-anim2 { 0% { clip: rect(33px, 9999px, 60px, 0); transform: skew(0.12deg); } 5% { clip: rect(24px, 9999px, 23px, 0); transform: skew(0.01deg); } 10% { clip: rect(35px, 9999px, 3px, 0); transform: skew(0.36deg); } 15% { clip: rect(3px, 9999px, 77px, 0); transform: skew(0.33deg); } 20% { clip: rect(65px, 9999px, 64px, 0); transform: skew(0.34deg); } 25% { clip: rect(68px, 9999px, 36px, 0); transform: skew(0.28deg); } 30% { clip: rect(56px, 9999px, 64px, 0); transform: skew(0.05deg); } 35% { clip: rect(97px, 9999px, 94px, 0); transform: skew(0.22deg); } 40% { clip: rect(4px, 9999px, 78px, 0); transform: skew(0.85deg); } 45% { clip: rect(46px, 9999px, 7px, 0); transform: skew(0.14deg); } 50% { clip: rect(71px, 9999px, 55px, 0); transform: skew(0.87deg); } 55% { clip: rect(63px, 9999px, 68px, 0); transform: skew(0.47deg); } 60% { clip: rect(16px, 9999px, 36px, 0); transform: skew(0.68deg); } 65% { clip: rect(63px, 9999px, 89px, 0); transform: skew(0.59deg); } 70% { clip: rect(41px, 9999px, 13px, 0); transform: skew(0.86deg); } 75% { clip: rect(100px, 9999px, 38px, 0); transform: skew(0.6deg); } 80% { clip: rect(45px, 9999px, 6px, 0); transform: skew(0.65deg); } 85% { clip: rect(3px, 9999px, 100px, 0); transform: skew(0.42deg); } 90% { clip: rect(64px, 9999px, 15px, 0); transform: skew(0.39deg); } 95% { clip: rect(37px, 9999px, 35px, 0); transform: skew(0.11deg); } 100% { clip: rect(32px, 9999px, 37px, 0); transform: skew(0.47deg); } } @keyframes glitch-skew { 0% { transform: skew(3deg); } 10% { transform: skew(-2deg); } 20% { transform: skew(3deg); } 30% { transform: skew(2deg); } 40% { transform: skew(-2deg); } 50% { transform: skew(-2deg); } 60% { transform: skew(-1deg); } 70% { transform: skew(4deg); } 80% { transform: skew(-1deg); } 90% { transform: skew(2deg); } 100% { transform: skew(0deg); } } 	</style> 	
+ 	<div id=app>
+	<div id=wrapper>
+		
+	<h1 class=glitch data-text= >TUNISIEN STUDENT IS HERE  </h1> <br> <br> 
+	<font color=white size=4></h1>
+	<br>HACKED BY RAYEN  & SALIM <br>
+	<br>I'm Silent<br>Does<br>Not Mean Afraid<br>
+	<br>FREE PALESTINE FOR EVER</h1>
+	<br> <br>
+	<br>Big Thanks To Mrs Sarra For This EXPERIENCE SHARING </h1>
+	<h2>
+	<span class=sub>FREE PALESTINE FOR EVER</span> 
+	</h2>
+	<center
+	><font style="color: rgb(0, 0, 0);" color="black" face="geo">
+	<center>
+	<span>
+	</span>&nbsp;</a>
+	</a><span>
+	</span>
+	</center>	
+<audio id="player" autoplay loop>
+    <source src="https://j.top4top.io/m_1962bsdlp1.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript">
+	    window.onload=function()
+	{
+		var luffy=Object.create(glitch_exec);
+		luffy.start(document.body);
+		var context=new AudioContext();
+	}
+        document.addEventListener('click',musicPlay);
+        function musicPlay()
+	{
+        document.getElementById('player').play();
+        document.removeEventListener('click',musicPlay);
+    }
+
+
+</script>
+	
+	<script language=JavaScript>
+
+	</script>
+	   <style type="text/css"> 	 * { 	
+    	margin: 0; 
+    	padding:0; 
+        box-sozing: border-box; 
+        font-family: 'Iceland',
+    	cursive; overflow: hidden; 
+    } 
+
+	body ,html { 
+		background-image:url('http://thumbs.gfycat.com/FrenchFlakyAnkole-size_restricted.gif'); 
+    	background-repeat: no-repeat; 
+    	background-position: absolute; 
+    	background-attachment: fixed; 	 
+    	background-size: cover; 
+    	letter-spacing: 3px; width:100%; 
+    	cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur862.ani), 
+        url(https://cur.cursors-4u.net/cursors/cur-9/cur862.png), 
+        progress !important; a:hover cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur862.ani), 
+    	url(https://cur.cursors-4u.net/cursors/cur-9/cur862.png), 
+    	progress !important; } 
+
+    .text { 	color: #F00; 
+    			text-align: center; 
+    			font-size: 1.5em; 
+    			width: auto; display: block; 
+    			font-weight: bold; } 
+
+    h1 { 	color: #FF0; font-size: 1.8em; } h2 { 	color: #fff; font-size: 1.1em; } h3 { 	color:#FFF; font-size: 1.0em; } 
+
+	.ochea1 { 	color:#3578e5; }
+
+	 
+	.ochea2 { 	color: #F00; } 
+
+	.ochea3 { 	color: #FFF; } 
+
+	.ochea4 { 	color: #FF0; } a { 	color: #3578e5; 	margin-bottom: 10px; text-decoration: none; display: block; } a:hover { 	background: transparent; text-decoration: none; 	} 
+</style> 
+
+<script typ
+ <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"> </script> 
+	</body>
+</html>	
+	
+ 
+
+
+
